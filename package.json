@@ -1,0 +1,27 @@
+{
+  "name": "reactTddWithKarma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browserify": "./node_modules/.bin/browserify -t reactify app/js/index.js -o app/js/bundle.js",
+    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^5.12.1",
+    "gulp": "^3.8.8",
+    "gulp-shell": "^0.2.9",
+    "karma": "^0.12.23",
+    "react": "^0.11.2",
+    "react-tools": "^0.11.2",
+    "reactify": "^0.14.0"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^2.1.1",
+    "karma-bro": "^0.7.1",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5"
+  }
+}
